@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <title>loccitane</title>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/responsive.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/jquery.scrollTo.min.js"></script>
+    <script src="https://kit.fontawesome.com/b1d3c025ef.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header id="header">
+    <div class="info">
+    <ul class="popup">
+        <li><a href="#">전구매 무료배송.</a></li>
+        <li><a href="#">첫 구매 시 미니 샤워젤 증정</a></li>
+        <li><a href="#">공식 온라인몰 회원 가입 시, 상시 5% 할인 혜택</a></li>
+    </ul><!--popup-->
+    </div><!--info-->
+
+    <div class="inner_header">
+        <div class="left">
+        <div class="event_open"><i class="fa-solid fa-gift"></i></div>
+        <div class="event_close"><i class="fa-solid fa-xmark"></i></div>
+        </div><!--left-->
+        
+        <div class="logo"><a href="./responsive.html"><img src="./img/logo.png" alt=""></a></div>
+
+        <div class="right">
+        <div class="search_open"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="search_close"><i class="fa-solid fa-xmark"></i></div>
+
+        <div class="search_bg"></div>
+        <form class="searching">
+            <input type="text" class="search_box"
+            placeholder="검색어를 입력하세요">
+            <button class="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="btn">
+        <div class="btn_open"><i class="fa-solid fa-bars"></i></div>
+        <div class="btn_close"><i class="fa-solid fa-xmark"></i></div>
+    </div><!--btn-->
+    </div><!--right-->
+
+    <div class="menu">
+        <ul id="nav">
+            <li class="navg">
+                <div class="title">스킨 & 립 케어<i class="fa-solid fa-angle-down"></i></div>
+                <ul class="sub">
+                    <li><a href="#">클렌져 (15)</a></li>
+                    <li><a href="#">토너 (5)</a></li>
+                    <li><a href="#">수분 & 영양 크림 (15)</a></li>
+                    <li><a href="#">세럼 & 오일 (17)</a></li>
+                    <li><a href="#">스크럽 & 마스크 (8)</a></li>
+                    <li><a href="#">아이 케어 (5)</a></li>
+                    <li><a href="#">자외선 차단제 (2)</a></li>
+                    <li><a href="#">미스트 (18)</a></li>
+                    <li><a href="#">립 케어 & 립 메이크 업 (15)</a></li>
+                </ul><!--sub-->
+            </li><!--navg-->
+            <li class="navg">
+                <div class="title">바디 & 핸드 케어<i class="fa-solid fa-angle-down"></i></div>
+                <ul class="sub">
+                    <li><a href="#">바디 케어</a></li>
+                    <li><a href="#">핸드 케어</a></li>
+                    <li><a href="#">아트 오브 핸드 크림</a></li>
+                </ul><!--sub-->
+            </li><!--navg-->
+            <li class="navg">
+                <div class="title">헤어 케어<i class="fa-solid fa-angle-down"></i></div>
+                <ul class="sub">
+                    <li><a href="#">샴푸 (22)</a></li>
+                    <li><a href="#">컨디셔너 (15)</a></li>
+                    <li><a href="#">마스크 & 트리트먼트 (3)</a></li>
+                    <li><a href="#">에코 리필 (5)</a></li>
+                    <li><a href="#">헤어 오일 & 에센스 (6)</a></li>
+                </ul><!--sub-->
+            </li><!--navg-->
+            <li class="navg">
+                <div class="title">맨즈 케어<i class="fa-solid fa-angle-down"></i></div>
+                <ul class="sub">
+                    <li><a href="#">스킨 케어 (21)</a></li>
+                    <li><a href="#">쉐이빙 (6)</a></li>
+                    <li><a href="#">배쓰 & 샤워 (39)</a></li>
+                    <li><a href="#">바디 로션 & 크림 (18)</a></li>
+                    <li><a href="#">향수 (10)</a></li>
+                </ul><!--sub-->
+            </li><!--navg-->
+            <li class="navg">
+                <div class="title">향수 & 홈<i class="fa-solid fa-angle-down"></i></div>
+                <ul class="sub">
+                    <li><a href="#">여성용 향수</a></li>
+                    <li><a href="#">남성용 향수</a></li>
+                    <li><a href="#">홈 컬렉션</a></li>
+                </ul><!--sub-->
+            </li><!--navg-->
+            <div class="infoma">
+            <a href="#"><i class="fa-regular fa-user"></i>마이 페이지</a>
+            <a href="#"><i class="fa-regular fa-compass"></i>매장 찾기</a>
+            <a href="#"><i class="fa-regular fa-circle-question"></i>고객 문의</a>
+            </div><!--info-->
+        </ul><!--nav-->
+    </div><!--menu-->
+
+<div class="event_menu">
+    <ul id="event_nav">
+        <li class="navg">
+            <div class="title">스테이 2.0 에코 뮤지엄</div>
+        </li><!--navg-->
+        <li class="navg">
+            <div class="title">베스트 셀러</div>    
+        </li><!--navg-->
+        <li class="navg">
+            <div class="title">이달의 프로모션</div>
+        </li><!--navg-->
+        <li class="navg">
+            <div class="title">선물 추천<i class="fa-solid fa-angle-down"></i></div>
+            <ul class="sub">
+                <li><a href="#">스킨 케어 선물 (14)</a></li>
+                <li><a href="#">바디 케어 선물 (26)</a></li>
+                <li><a href="#">핸드 케어 선물 (36)</a></li>
+                <li><a href="#">헤어 케어 선물 (10)</a></li>
+                <li><a href="#">향수 선물 (25)</a></li>
+                <li><a href="#">홈 퍼퓸 & 디퓨저 (11)</a></li>
+                <li><a href="#">립 메이크업 선물 (5)</a></li>
+            </ul><!--sub-->
+        </li><!--navg-->
+        <li class="navg">
+            <div class="title">라인별 컬렉션<i class="fa-solid fa-angle-down"></i></div>
+            <ul class="sub">
+                <li><a href="#">시어 버터</a></li>
+                <li><a href="#">버베나</a></li>
+                <li><a href="#">아로마콜로지</a></li>
+                <li><a href="#">이모르뗄 디바인</a></li>
+                <li><a href="#">이모르뗄 프레셔스</a></li>
+                <li><a href="#">아몬드</a></li>
+                <li><a href="#">로즈</a></li>
+                <li><a href="#">체리 블라썸</a></li>
+                <li><a href="#">피브완</a></li>
+                <li><a href="#">라벤더</a></li>
+                <li><a href="#">아를레지엔느</a></li>
+                <li><a href="#">오 드 쎄드라</a></li>
+                <li><a href="#">아쿠아 레오티에</a></li>
+                <li><a href="#">이모르뗄 리셋</a></li>
+                <li><a href="#">에르베</a></li>
+                <li><a href="#">프루티 립 틴트밤</a></li>
+            </ul><!--sub-->
+        </li><!--navg-->
+        <li class="navg">
+            <div class="title">록시땅 소개<i class="fa-solid fa-angle-down"></i></div>
+            <ul class="sub">
+                <li><a href="#">록시땅의 약속</a></li>
+                <li><a href="#">록시땅의 뷰티 TIP</a></li>
+                <li><a href="#">록시땅의 원료</a></li>
+            </ul><!--sub-->
+        </li><!--navg-->
+        <div class="infoma">
+            <a href="#"><i class="fa-regular fa-user"></i>마이 페이지</a>
+            <a href="#"><i class="fa-regular fa-compass"></i>매장 찾기</a>
+            <a href="#"><i class="fa-regular fa-circle-question"></i>고객 문의</a>
+        </div><!--info-->
+    </ul><!--nav-->
+</div><!--menu-->
+    </div><!--inner_header-->
+
+</header><!--outer_header-->
+<!-- <picture>
+    <source media="(min-width:960px)" srcset="img/source_img.jpg">
+    <source media="(min-width:601px)" srcset="img/tablet_img01.jpg">
+    <source media="(min-width:320px)" srcset="img/mobile_img01.jpg">
+    <img src="./img/source_img.jpg" alt="" style="width: 100%;">
+</picture> -->
+
+<div class="web_header">
+    <div class="baby_header">
+        <div class="web_left">
+            <input type="text" class="web_search" placeholder="검색어를 입력하세요.">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div><!--web_left-->
+        <div class="web_logo">
+            <a href="./index.html">
+            <img src="./img/logo.png" alt=""></a>
+        </div>
+        <div class="web_right">
+            <div class="right_01">
+                <a href="#">
+                <i class="fa-regular fa-user"></i>
+                마이 페이지 </a>
+            </div>
+            <div class="right_02">
+                <a href="#">
+                <i class="fa-solid fa-bag-shopping"></i>
+                내 쇼핑백 </a>
+            </div>
+        </div><!--web_right-->
+    </div><!--baby_header-->
+    <div class="web_lnb">
+        <ul class="lnb">
+            <li class="web_sub ws">
+                <a href="#">베스트 셀러</a>
+            </li>
+            <li class="web_sub ws">
+                <a href="#">이달의 프로모션</a>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num1">선물 추천</a>
+            <ul class="web_menu1">
+                <li><a href="#">스킨 케어 선물(14)</a></li>
+                <li><a href="#">핸드 케어 선물(35)</a></li>
+                <li><a href="#">향수 선물(23)</a></li>
+                <li><a href="#">립 메이크업 선물(5)</a></li>
+                <li><a href="#">바디 케어 선물(24)</a></li>
+                <li><a href="#">헤어 케어 선물(10)</a></li>
+                <li><a href="#">홈 퍼퓸 & 디퓨저(11)</a></li>
+            </ul><!--web_menu1-->
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num2">라인별 컬렉션</a>
+            <ul class="web_menu2">
+                <li class="box01">
+                    <div class="box01_1">
+                        <p><a href="#">시어버터</a></p>
+                        <p><a href="#">버베나</a></p>
+                        <p><a href="#">아로마콜로지</a></p>
+                        <p><a href="#">이모르뗄 디바인</a></p>
+                        <p><a href="#">이모르뗄 프레셔스</a></p>
+                        <p><a href="#">아몬드</a></p>
+                        <p><a href="#">로즈</a></p>
+                    </div>
+                    <div class="box01_1">
+                        <p><a href="#">체리 블라썸</a></p>
+                        <p><a href="#">피브완</a></p>
+                        <p><a href="#">렌느 블랑쉬</a></p>
+                        <p><a href="#">라벤더</a></p>
+                        <p><a href="#">아를레지엔느</a></p>
+                        <p><a href="#">꺄드</a></p>
+                        <p><a href="#">오 드 쎄드라</a></p>
+                    </div>
+                    <div class="box01_1">
+                        <p><a href="#">떼르 드 루미에르 로</a></p>
+                        <p><a href="#">아쿠아 레오티에</a></p>
+                        <p><a href="#">이모르뗄 리셋</a></p>
+                        <p><a href="#">에르베</a></p>
+                        <p><a href="#">클렌징 인퓨전</a></p>
+                        <p><a href="#">아트 드 비브레 홈 컬렉션</a></p>
+                        <p><a href="#">프루티 립 틴트밤</a></p>
+                    </div>
+                </li>
+            </ul>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num3">스킨 & 립 케어</a>
+            <ul class="web_menu3">
+                <li><a href="#">클렌져 (15)</a></li>
+                <li><a href="#">토너 (5)</a></li>
+                <li><a href="#">수분 & 영양 크림 (15)</a></li>
+                <li><a href="#">세럼 & 오일 (17)</a></li>
+                <li><a href="#">스크럽 & 마스크 (8)</a></li>
+                <li><a href="#">자외선 차단제 (2)</a></li>
+                <li><a href="#">립 케어 & 립 메이크 업 (15)</a></li>
+            </ul>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num4">바디 & 핸드케어</a>
+            <ul class="web_menu4">
+                <li><a href="#">바디 케어</a></li>
+                <li><a href="#">핸드 케어</a></li>
+                <li><a href="#">아트 오브 핸드 크림</a></li>
+            </ul>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num5">헤어 케어</a>
+            <ul class="web_menu5">
+                <li><a href="#">샴푸 (22)</a></li>
+                <li><a href="#">컨디셔너 (15)</a></li>
+                <li><a href="#">마스크 & 트리트먼트 (3)</a></li>
+                <li><a href="#">에코 리필 (5)</a></li>
+                <li><a href="#">헤어 오일 & 에센스 (6)</a></li>
+            </ul>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num6">맨즈 케어</a>
+            <ul class="web_menu6">
+                <li><a href="#">스킨 케어 (21)</a></li>
+                <li><a href="#">쉐이빙 (6)</a></li>
+                <li><a href="#">배쓰 & 샤워 (39)</a></li>
+                <li><a href="#">바디 로션 & 크림 (18)</a></li>
+                <li><a href="#">향수 (10)</a></li>
+            </ul>
+            </li>
+            <li class="web_sub">
+                <a href="#" id="num7">향수 & 홈</a>
+            <ul class="web_menu7">
+                <li><a href="#">여성용 향수</a></li>
+                <li><a href="#">남성용 향수</a></li>
+                <li><a href="#">홈 컬렉션 </a></li>
+            </ul>
+            </li>
+        </ul>
+    </div><!--web_lnb-->
+</div><!--web_header-->
+
+<section class="main_visual">
+<ul class="bxslider">
+    <li><img src="./img/main_visual01_mobile.jpg">
+        <div class="visual_text">
+            <h3>Shea Butter</h3>
+            <h4>자유, 용감한 도전 그리고 대담한 아름다움.</h4>
+            <p><a href="#">자세히 보기</a></p>
+        </div><!--visual_text-->
+    </li>
+    <li><img src="./img/main_visual02_mobile.jpg">
+        <div class="visual_text">
+            <h3>록시땅 스테이 2.0</h3>
+            <h4>록시땅의 지난 46년 간의 히스토리를</br> 
+                담은 에코 뮤지엄 록시땅 스테이 2.0으로</br>
+                여러분을 초대합니다.</h4>
+            <p><a href="#">자세히 보기</a></p>
+        </div><!--visual_text-->
+    </li>
+</ul><!--bxslider-->
+</section><!--main_visual-->
+
+<section class="main_visual_02">
+    <ul class="bxslider_02">
+        <li><img src="./img/main_visual01_web.jpg">
+            <div class="visual_text">
+                <h3>NEW 록시땅 시어버터 핸드크림</h3>
+                <h4>건강하고 탄력 있는 손으로 가꾸어줍니다.</h4>
+                <p><a href="#">자세히 보기</a></p>
+            </div><!--visual_text-->
+        </li>
+        <li><img src="./img/main_visual02.jpg">
+            <div class="visual_text">
+                <h3>록시땅 스테이 2.0</h3>
+                <h4>록시땅의 지난 46년 간의 히스토리를 담은 </br>
+                    에코 뮤지엄으로 여러분을 초대합니다.</h4>
+                <p><a href="#">자세히 보기</a></p>
+            </div><!--visual_text-->
+        </li>
+    </ul><!--bxslider-->
+    </section><!--main_visual_02-->
+    
+
+<section class="wrap">
+<section class="section_01">
+    <p class="title_01">LIMITED 에르베 클라리 세이지</p>
+<div class="box_01">
+<div class="box_img">
+<img src="./img/section_main01.jpg" alt="">
+</div><!--box_img-->
+<div class="section_text">
+<p class="text_01">A NEW JOURNEY IN NATURE.</p>
+<p class="text_02">자유, 용감한 도전 그리고 대담한 아름다움</p>
+<div class="button_01"><a href="#">자세히 보기</a></div>
+</div><!--section_text-->
+</div><!--box_01-->
+
+<div class="slider">
+    <div>
+        <img src="./img/section_img01.jpg" alt=""> 
+        <div class="product">
+            <p class="title">[공식몰 단독] 에르베 클라리 </br>
+                세이지 EDT 세트</p>
+            <p class="price">₩ 85,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img02.jpg" alt="">
+        <div class="product">
+            <p class="title">에르베 클라리 </br>
+                세이지 바디 듀오</p>
+            <p class="price">₩ 71,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img03.jpg" alt="">
+        <div class="product">
+            <p class="title">GIFT & LOVE 플로럴</br>
+                핸드 크림 트리오</p>
+            <p class="price">₩ 42,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img04.jpg" alt="">
+        <div class="product">
+            <p class="title">2022 에르베 클라리</br>
+                세이지 핸드 크림 30ml</p>
+            <p class="price">₩ 15,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img05.jpg" alt="">
+        <div class="product">
+            <p class="title">2022 에르베 클라리</br>
+                세이지 젠틀 샤워 젤 250ml</p>
+            <p class="price">₩ 29,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img06.jpg" alt="">
+        <div class="product">
+            <p class="title">2022 에르베 클라리</br>
+                세이지 뷰티 밀크 250m</p>
+            <p class="price">₩ 42,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+    <div>
+        <img src="./img/section_img07.jpg" alt="">
+        <div class="product">
+            <p class="title">2022 에르베 클라리</br>
+                세이지 퍼퓸드 솝 100g</p>
+            <p class="price">₩ 9,000</p>
+            <a href="#">구매하기</a>
+        </div> 
+    </div>
+</div>
+</section><!--section_01-->
+<section class="section_02">
+    <p class="title_01">Shea Butter</p>
+    <div class="section02_box">
+    <div class="box_01">
+        <picture>
+    <source media="(min-width:1024px)" srcset="img/sheaButter_img1.jpg">
+    <source media="(min-width:601px)" srcset="img/sheaButter_img1.jpg">
+    <source media="(min-width:375px)" srcset="img/sheaButter_img1_mobile.jpg">
+    <img src="./img/sheaButter_img1.jpg" alt="" style="width: 100%;">
+</picture>
+    <!-- <img src="./img/section03_img01.jpg" alt=""> -->
+    <p class="text_01">What is Shea Butter?</p>
+    <p class="text_02">아프리카 시어 나무의 열매에서 추출한 시어 버터는 영양 성분으로 유명한 뷰티 세계에서 가장 다양한 천연 성분 중 하나입니다.</p>
+    </div><!--box_01-->
+    <div class="shea">
+        <div class="shea_01">
+            <a href="#" class="img_01 img">
+                <img src="./img/section03_img02.jpg" alt=""> 
+                <p>바디 트리트먼트</p>
+                <div class="shea_text">
+                    <strong>바디 트리트먼트</strong><br>
+                    <span>건조하고 민간함 피부를 위한 유니버셜 바디 트리트먼트.</span>
+                </div>
+            </a>
+            <a href="#" class="img_02 img">
+                <img src="./img/section03_img04.jpg" alt=""> <p>핸드 케어</p>
+                <div class="shea_text">
+                    <strong>핸드 케어</strong><br>
+                    <span>영양이 공급되고 진정되고 보호되는 손을 위해</span>
+                </div>
+            </a>
+            
+        </div>
+        <div class="shea_02">
+            <a href="#" class="img_03 img">
+                <p>페이스 케어</p>
+                <img src="./img/section03_img03.jpg" alt="">
+                <div class="shea_text">
+                    <strong>페이스 케어</strong><br>
+                    <span>
+                        건조하고 민감한 피부를 편안하게 진정시킵니다.
+                    </span>
+                </div>
+            </a>
+            <a href="#" class="img_04 img">
+                <p>풋 케어</p>
+                <img src="./img/section03_img05.jpg" alt="">
+                <div class="shea_text">
+                    <strong>풋 케어</strong><br>
+                    <span>건조하고 갈라지는 느낌부터 부드럽고 촉촉한 느낌까지.</span>
+                </div>
+            </a>
+        </div>
+    </div><!--shea-->
+</div>
+</section><!--section_02-->
+</section><!--wrap-->
+
+<section class="event_banner">
+    <div class="event_img"><a href="#">
+        <img src="./img/model.jpg" alt="">
+        <div class="event_text">
+        <h4>Shea Butter Collection</h4>
+        <p>자세히 보기</p></a>
+    </div><!--section02_box-->
+    </div><!--event_img-->
+</section><!--event_banner-->
+
+<div class="promotion">
+<p>공식몰 프로모션</p>
+<div class="promo_box">
+<div class="promo">
+    <img src="./img/promotion_img01.jpg" alt="">
+    <p class="promo_text"><a href="#">첫 구매 기프트 증정</a>
+    <a href="#" class="txt">공식몰 신규 가입후 첫 구매하시는 모든 분들께 <strong>미니 버베나 샤워젤 30ml</strong>을 증정합니다</a>
+    </p>
+</div>
+<div class="promo">
+    <img src="./img/promotion_img02.jpg" alt="">
+   <p class="promo_text"><a href="#">5월 공식몰 특별 사은품</a>
+    <a href="#" class="txt">금액대 별 <strong>록시땅 공식몰 사은품</strong>을 지금 바로 만나보세요.</a>
+   </p>
+</div>
+<div class="promo">
+    <img src="./img/promotion_img03.jpg" alt="">
+    <p class="promo_text"><a href="#">5월 공식몰 우수 리뷰어 이벤트</a>
+    <a href="#" class="txt">우수한 리뷰를 남겨주신 5분을 선정하여 <strong>시어 버베나 핸드 앤 바디 리쿼드 솝 500 ml</strong>를 증정합니다</a>
+    </p>
+</div>
+</div>
+<p><a href="#" class="more">자세히 보기</a></p>
+</div><!--promotion-->
+
+<div class="video_box">
+<p class="title">친환경 포장 서비스</p>
+<div class="video_container">
+    <video src="./video/Loccitane_video.mp4" controls poster="./img/video_img.gif"></video>
+</div>
+<div class="video_text">
+<h4>록시땅의 친환경 ECO MERCI 박스</h4>
+<p class="text">
+    록시땅 공식몰에서 주문하신 제품은 플라스틱 테이프와 완충제를 사용하지 않아 박스부터 포장지까지 100% 재활용이 가능한 포장박스로 배송됩니다.
+</p>
+</div><!--video_text-->
+</div><!--video_box-->
+
+<div class="location">
+    <p class="title">매장 찾기</p>
+    <div class="location_box">
+    <div class="location_img">
+    <img src="./img/location_img.jpg" alt="">
+    </div><!--location_img-->
+    <div class="location_text">
+    <h4>가장 가까운 록시땅 매장을 찾아보세요.</h4>
+    <div class="input_grp">
+    <i class="fa-solid fa-location-dot"></i>
+    <input type="text" class="location_search" placeholder="ex. 압구정">
+    </div><!--input_grp-->
+    <div class="more"><a href="#">가까운 매장 찾기</a></div>
+    </div><!--location_text-->
+    </div><!--location_box-->
+</div><!--location-->
+
+<div class="notice">
+    <div class="notice_01">
+    <h4 class="noti_title">
+        <span>I</span>INIPAY 에스크로 가입 확인
+    </h4>
+    <span class="noti_text">
+        록시땅 공식몰(kr.loccitane.com)은 귀하의 결제 정보 보안을 최상의 상태로 유지하기 위하여, 결제 시, (주)이니시스의 결제대금 예치 서비스인 에스크로 서비스를 제공하고 있습니다.
+    </span>
+    <strong>결제대금예치업 등록번호 : 02-006-00013<br>
+        통신판매번호 :  2008-서울강남-0844</strong>
+    </div><!--notice_01-->
+
+    <div class="notice_02">
+    <h4 class="noti_title_01">
+        <span>I</span>고객 문의
+    </h4>
+    <span class="noti_text">
+        록시땅 대표전화 : (02) 2054-0500 <br> 
+        록시땅 대표메일 :loccitane@loccitane.co.kr <br> 
+        록시땅 플러스친구: @록시땅
+    </span>
+    <strong>*업무 시간: 평일 오전 10시~오후 5시, 공휴일 제외<br>
+        결제 문의 : 1588-4954</strong>
+    </div><!--notice_02-->
+</div><!--notice-->
+
+<div class="bot02_box">
+<div class="bot02">
+    <div class="bot02_1">
+    <p>록시땅 소개</p>
+    <ul>
+        <li><a href="#">록시땅 팩토리 투어</a></li>
+        <li><a href="#">록시땅 멤버십 프로그램</a></li>
+        <li><a href="#">록시땅 리사이클 캠페인</a></li>
+        <li><a href="#">스파 록시땅</a></li>
+        <li><a href="#">록시땅 그룹</a></li>
+        <li><a href="#">투자자</a></li>
+    </ul>
+</div><!--bot02_1-->
+    <div class="bot02_1">
+    <p>고객 지원</p>
+    <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">온라인 문의</a></li>
+        <li><a href="#">자주하는 질문</a></li>
+        <li><a href="#">배송조회</a></li>
+    </ul>
+</div><!--bot02_1-->
+    <div class="bot02_1">
+    <p>기업 구매 문의</p>
+    <ul>
+        <li><a href="#">기업 선물 문의</a></li>
+        <li><a href="#">호텔 어메니티</a></li>
+        <li><a href="#">기업 선물 추천</a></li>
+    </ul>
+</div><!--bot02_1-->
+    <div class="bot02_1">
+    <p>SNS</p>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Kakaotalk</a></li>
+        <li><a href="#">Twitter</a></li>
+        
+    </ul>
+</div><!--bot02_1-->
+</div><!--bot02-->
+</div><!--bot02_box-->
+
+
+    <ul id="bot">
+       <li class="menu1">
+          <div class="bot_title">록시땅 소개
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <ul class="menu2">
+             <li><a href="#">록시땅 소개</a></li>
+             <li><a href="#">록시땅 팩토리 투어</a></li>
+             <li><a href="#">록시땅 멤버십 프로그램</a></li>
+             <li><a href="#">스파 록시땅</a></li>
+             <li><a href="#">록시땅 그룹</a></li>
+          </ul>
+       </li>
+       <li class="menu1">
+        <div class="bot_title">고객 지원
+            <i class="fa-solid fa-plus"></i>
+        </div>
+          <ul class="menu2">
+             <li><a href="#">이용약관</a></li>
+             <li><a href="#">개인정보처리방침</a></li>
+             <li><a href="#">온라인 문의</a></li>
+             <li><a href="#">자주하는 질문</a></li>
+             <li><a href="#">배송조회</a></li>
+          </ul>
+       </li>
+       <li class="menu1">
+        <div class="bot_title">기업 구매 문의
+            <i class="fa-solid fa-plus"></i>
+        </div>
+          <ul class="menu2">
+             <li><a href="#">기업 선물 문의</a></li>
+             <li><a href="#">호텔 어메니티</a></li>
+             <li><a href="#">기업 선물 추천</a></li>
+          </ul>
+       </li>
+    </ul><!--bot-->
+
+    <div class="bottom">
+        <img src="./img/bottom_logo.png" alt="">
+        <span>
+            상호: 록시땅코리아 유한책임회사 | 사업자 등록 번호 211-87-74234 
+            <br>대표자 : 안드레조셉호프만 | 주소 : 서울특별시 강남구 
+            <br>테헤란로 87길 36(삼성동) 도심공항타워 21층(06164)
+            <br>대표전화 : (02)2054-0500 | 대표메일 : LOCCITANE@LOCCITANE.CO.KR 
+            <br>결제관련문의 : 1588-4954 | 주문관련문의 : (02)2054-0500
+            <br>통신판매번호 : 2008-서울강남-0844 |
+        </span>
+        <p>L’OCCITANE EN PROVENCE © COPYRIGHT 2022</p>
+    </div>
+
+
+
+<a href="#header" class="top"><i class="fa-solid fa-chevron-up"></i></a><!--top_button-->
+
+
+
+
+    
+</body>
+</html>
